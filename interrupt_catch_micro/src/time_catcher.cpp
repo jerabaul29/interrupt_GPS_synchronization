@@ -3,7 +3,6 @@
 
 volatile bool TimeCatcher::to_read_flag = false;
 volatile long TimeCatcher::measured_time = 0; 
-int TimeCatcher::pin = 0;  // dummy value
 
 TimeCatcher time_catcher;
 
@@ -31,9 +30,19 @@ void ISR_measure_time(void){
     time_catcher.measure_time();
 }
 
-void TimeCatcher::turn_on(int pin){
+void TimeCatcher::turn_on(int pin, int mode, bool pullup){
     pin = pin;
-    attachInterrupt(digitalPinToInterrupt(pin), ISR_measure_time, RISING);
+    mode = mode;
+    pullup = pullup;
+
+    if (pullup){
+        pinMode(pin, INPUT_PULLUP);
+    }
+    else{
+        pinMode(pin, INPUT);
+    }
+
+    attachInterrupt(digitalPinToInterrupt(pin), ISR_measure_time, mode);
 }
 
 void TimeCatcher::turn_off(void){

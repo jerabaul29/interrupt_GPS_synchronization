@@ -3,19 +3,21 @@
 
 constexpr unsigned long baud_rate = 115200;
 constexpr int pin_interrupt = 2;
+constexpr bool pullup = true;
 
 void setup() {
   Serial.begin(baud_rate);
-  Serial.println(F("booted..."));
   delay(10);
+  Serial.println(F("booted..."));
 
-  time_catcher.turn_on(pin_interrupt);
+  time_catcher.turn_on(pin_interrupt, FALLING, pullup);
+
   Serial.print(F("interrupt attached to pin "));
   Serial.println(pin_interrupt);
+  Serial.println();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   if (time_catcher.available_time()){
     long time_recorded = time_catcher.get_time();
 
@@ -23,5 +25,3 @@ void loop() {
     Serial.println(time_recorded);
   }
 }
-
-
