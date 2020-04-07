@@ -1,0 +1,72 @@
+interrupt attached to pin 2
+start GPS...GPS started
+$GPGGA,125015.000,5956.4162,N,01040.6837,E,2,07,1.08,103.8,M,40.7,M,0000,0000*6B
+micros = 181880
+$GPRMC,125015.000,A,5956.4162,N,01040.6837,E,0.17,91.82,070420,,,D*5D
+micros = 256540
+$PMTK001,314,3*36
+micros = 276516
+$PMTK001,220,3*30
+micros = 296476
+$PMTK001,300,3*33
+micros = 316520
+interrupt was triggered at time 702856
+time elapsed since last trigger (micro s): 702856
+$GPGGA,125016.000,5956.4162,N,01040.6836,E,2,07,1.08,103.8,M,40.7,M,0000,0000*69
+micros = 1198984
+$GPRMC,125016.000,A,5956.4162,N,01040.6836,E,0.29,91.82,070420,,,D*52
+micros = 1273596
+interrupt was triggered at time 1702644
+time elapsed since last trigger (micro s): 999788
+$GPGGA,125017.000,5956.4162,N,01040.6835,E,2,07,1.08,103.8,M,40.7,M,0000,0000*6B
+micros = 2180560
+$GPRMC,125017.000,A,5956.4162,N,01040.6835,E,0.34,91.82,070420,,,D*5C
+micros = 2255172
+interrupt was triggered at time 2702432
+time elapsed since last trigger (micro s): 999788
+$GPGGA,125018.000,5956.4162,N,01040.6833,E,2,07,1.08,103.8,M,40.7,M,0000,0000*62
+micros = 3149244
+$GPRMC,125018.000,A,5956.4162,N,01040.6833,E,0.37,91.82,070420,,,D*56
+micros = 3223856
+interrupt was triggered at time 3702220
+time elapsed since last trigger (micro s): 999788
+$GPGGA,125019.000,5956.4162,N,01040.6831,E,2,07,1.08,103.8,M,40.7,M,0000,0000*61
+micros = 4211232
+$GPRMC,125019.000,A,5956.4162,N,01040.6831,E,0.35,91.82,070420,,,D*57
+micros = 4285836
+interrupt was triggered at time 4702008
+time elapsed since last trigger (micro s): 999788
+$GPGGA,125020.000,5956.4163,N,01040.6829,E,2,08,0.97,103.8,M,40.7,M,0000,0000*6B
+micros = 5149088
+$GPRMC,125020.000,A,5956.4163,N,01040.6829,E,0.25,91.82,070420,,,D*54
+micros = 5223692
+interrupt was triggered at time 5701792
+time elapsed since last trigger (micro s): 999784
+$GPGGA,125021.000,5956.4163,N,01040.6828,E,1,07,1.24,103.8,M,40.7,M,,*6E
+micros = 6134836
+$GPRMC,125021.000,A,5956.4163,N,01040.6828,E,0.26,91.82,070420,,,A*52
+micros = 6209552
+interrupt was triggered at time 6701580
+time elapsed since last trigger (micro s): 999788
+$GPGGA,125022.000,5956.4163,N,01040.6827,E,1,07,1.24,103.8,M,40.7,M,,*62
+micros = 7174724
+$GPRMC,125022.000,A,5956.4163,N,01040.6827,E,0.31,91.82,070420,,,A*58
+micros = 7249448
+interrupt was triggered at time 7701368
+time elapsed since last trigger (micro s): 999788
+$GPGGA,125023.000,5956.4163,N,01040.6825,E,1,06,1.32,103.8,M,40.7,M,,*67
+micros = 8176504
+$GPRMC,125023.000,A,5956.4163,N,01040.6825,E,0.11,91.82,070420,,,A*59
+micros = 8251224
+interrupt was triggered at time 8701156
+time elapsed since last trigger (micro s): 999788
+$GPGGA,125024.000,5956.4163,N,01040.6825,E,1,07,1.24,103.8,M,40.7,M,,*66
+micros = 9130648
+$GPRMC,125024.000,A,5956.4163,N,01040.6825,E,0.15,91.82,070420,,,A*5A
+micros = 9205372
+interrupt was triggered at time 9700940
+time elapsed since last trigger (micro s): 999784
+$GPGGA,125025.000,5956.4163,N,01040.6825,E,1,07,1.24,103.8,M,40.7,M,,*67
+micros = 10143248
+$GPRMC,125025.000,A,5956.4163,N,01040.6825,E,0.04,91.82,070420,,,A*5B
+micros = 10217968

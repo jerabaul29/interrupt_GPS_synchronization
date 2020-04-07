@@ -21,7 +21,6 @@ void setup() {
 
   Serial.print(F("interrupt attached to pin "));
   Serial.println(pin_interrupt);
-  Serial.println();
 
   Serial.print(F("start GPS..."));
   GPS.begin(9600);
