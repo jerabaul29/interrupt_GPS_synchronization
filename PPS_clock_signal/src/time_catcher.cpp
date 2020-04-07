@@ -1,28 +1,34 @@
 #include <Arduino.h>
 #include "time_catcher.h"
 
-volatile bool TimeCatcher::to_read_flag = false;
-volatile long TimeCatcher::measured_time = 0; 
+volatile uint8_t TimeCatcher::to_read_flag_array = 0;
+volatile long TimeCatcher::measured_time[] = {0, 0, 0, 0, 0, 0}; 
 
 TimeCatcher time_catcher;
 
-void TimeCatcher::measure_time(){
-    measured_time = micros();
-    to_read_flag = true;
+
+
+void TimeCatcher::measure_time(uint8_t interrupt_nbr){
+    measured_time[pin_nbr] = micros();
+    to_read_flag_array |= (0b1 << pin_nbr);
 }
 
 bool TimeCatcher::available_time(){
-    return to_read_flag;
+    return (!to_read_flag_array == 0);
 }
 
-long TimeCatcher::get_time(void){
+TimedInterrupt TimeCatcher::get_measurement(void){
     if (!available_time()){
         // this is an error!
-        return(0);
+        return(TimedInterrupt{255, 0});
     }
     else{
-        to_read_flag = false;
-        return(measured_time);
+        // find which interrupt number
+        int nbr_of_shifts = 0;
+
+        while (true){
+
+        }
     }
 }
 
@@ -30,11 +36,7 @@ void ISR_measure_time(void){
     time_catcher.measure_time();
 }
 
-void TimeCatcher::turn_on(int pin, int mode, bool pullup){
-    pin = pin;
-    mode = mode;
-    pullup = pullup;
-
+void TimeCatcher::turn_on(uint8_t pin, int mode, bool pullup){
     if (pullup){
         pinMode(pin, INPUT_PULLUP);
     }
@@ -45,6 +47,6 @@ void TimeCatcher::turn_on(int pin, int mode, bool pullup){
     attachInterrupt(digitalPinToInterrupt(pin), ISR_measure_time, mode);
 }
 
-void TimeCatcher::turn_off(void){
+void TimeCatcher::turn_off(uint8_t pin){
     detachInterrupt(digitalPinToInterrupt(pin));
 }
