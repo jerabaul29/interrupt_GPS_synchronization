@@ -2,6 +2,24 @@
 #include "time_catcher.h"
 #include <Adafruit_GPS.h>
 
+/*
+Boards used:
+- Adafruit GPS breakout
+- Arduino Mega
+
+Wiring:
+- Mega USB to computer
+- Mega 5V to GPS Vin
+- Mega GND to GPS GND
+- Mega pin 2 (interrupt pin) to GPS PPS
+- Mega pin 19 (RX1) to GPS TX
+- Mega pin 18 (TX1) to GPS RX
+
+Libraries:
+- see the time_catcher.{h, cpp} in this folder
+- see the Adafruit_GPS in ../lib
+*/
+
 constexpr unsigned long baud_rate = 115200;
 constexpr int pin_interrupt = 2;
 constexpr bool pullup = false;
