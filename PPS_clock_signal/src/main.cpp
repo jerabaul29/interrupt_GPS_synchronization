@@ -18,6 +18,11 @@ Wiring:
 Libraries:
 - see the time_catcher.{h, cpp} in this folder
 - see the Adafruit_GPS in ../lib
+
+Note about PPS vs. GPS:
+- see discussion here: https://electronics.stackexchange.com/questions/254216/gps-pps-signal-corresponds-to-data-time
+- the GPS output for a given second probably comes AFTER the PPS rising edge
+- ie it should be: time_at_rising_PPS = most_recent_gps_time_utc + 1 second
 */
 
 constexpr unsigned long baud_rate = 115200;
