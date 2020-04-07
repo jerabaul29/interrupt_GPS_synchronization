@@ -22,7 +22,7 @@ constexpr uint8_t mapping_interrupt_pin_to_index[] {255, 255,   0,   1, 255, 255
                                                       4,   5};
 
 struct TimedInterrupt{
-    uint8_t interrupt_number;
+    uint8_t interrupt_index;
     unsigned long micros;
 };
 
@@ -30,9 +30,10 @@ class TimeCatcher{
     private:
         static volatile long measured_time[number_of_interrupt_capable_pins];
         static volatile uint8_t to_read_flag_array;  // each bit is a bool for 'this pin number should be read'
+                                                     // 1 byte is 8 flags > 6 interrupt capable pins on mega
 
     public:
-        static void measure_time(uint8_t pin_index);
+        static void measure_time(uint8_t interrupt_index);
         static bool available_time(void);
         static TimedInterrupt get_measurement(void);
         static void turn_on(uint8_t pin, int mode, bool pullup=true);

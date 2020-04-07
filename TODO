@@ -1,0 +1,3 @@
+- get the class for measuring time on several interrupt pins working
+- check time between PC through Arduino and GPS
+- write a class to fully take advantage of both GPS timing and PPS

@@ -6,11 +6,9 @@ volatile long TimeCatcher::measured_time[] = {0, 0, 0, 0, 0, 0};
 
 TimeCatcher time_catcher;
 
-
-
-void TimeCatcher::measure_time(uint8_t interrupt_nbr){
-    measured_time[pin_nbr] = micros();
-    to_read_flag_array |= (0b1 << pin_nbr);
+void TimeCatcher::measure_time(uint8_t interrupt_index){
+    measured_time[interrupt_index] = micros();
+    to_read_flag_array |= (0b1 << interrupt_index);
 }
 
 bool TimeCatcher::available_time(){
@@ -23,6 +21,8 @@ TimedInterrupt TimeCatcher::get_measurement(void){
         return(TimedInterrupt{255, 0});
     }
     else{
+        // TODO: continue here...
+        TODO
         // find which interrupt number
         int nbr_of_shifts = 0;
 
@@ -44,6 +44,7 @@ void TimeCatcher::turn_on(uint8_t pin, int mode, bool pullup){
         pinMode(pin, INPUT);
     }
 
+    // TODO: - call the right ISR function; inline all possible ISR functions
     attachInterrupt(digitalPinToInterrupt(pin), ISR_measure_time, mode);
 }
 
