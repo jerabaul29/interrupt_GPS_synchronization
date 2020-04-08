@@ -33,6 +33,7 @@ with serial.Serial(serial_port, baudrate, timeout=0) as ser:
 
             if (crrt_char == '\n'):
                 print(string_read)
+                print(datetime.now())
                 string_read = ""
             else:
                 string_read += crrt_char
