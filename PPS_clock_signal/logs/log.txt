@@ -1,72 +1,66 @@
+--- Available filters and text transformations: colorize, debug, default, direct, hexlify, log2file, nocontrol, printable, send_on_enter, time
+--- More details at http://bit.ly/pio-monitor-filters
+booted...
 interrupt attached to pin 2
 start GPS...GPS started
-$GPGGA,125015.000,5956.4162,N,01040.6837,E,2,07,1.08,103.8,M,40.7,M,0000,0000*6B
-micros = 181880
-$GPRMC,125015.000,A,5956.4162,N,01040.6837,E,0.17,91.82,070420,,,D*5D
-micros = 256540
+�ʢb*�0.15,141.11,080420,,,D*65
+micros = 52612
 $PMTK001,314,3*36
-micros = 276516
+micros = 103068
 $PMTK001,220,3*30
-micros = 296476
+micros = 122964
 $PMTK001,300,3*33
-micros = 316520
-interrupt was triggered at time 702856
-time elapsed since last trigger (micro s): 702856
-$GPGGA,125016.000,5956.4162,N,01040.6836,E,2,07,1.08,103.8,M,40.7,M,0000,0000*69
-micros = 1198984
-$GPRMC,125016.000,A,5956.4162,N,01040.6836,E,0.29,91.82,070420,,,D*52
-micros = 1273596
-interrupt was triggered at time 1702644
-time elapsed since last trigger (micro s): 999788
-$GPGGA,125017.000,5956.4162,N,01040.6835,E,2,07,1.08,103.8,M,40.7,M,0000,0000*6B
-micros = 2180560
-$GPRMC,125017.000,A,5956.4162,N,01040.6835,E,0.34,91.82,070420,,,D*5C
-micros = 2255172
-interrupt was triggered at time 2702432
-time elapsed since last trigger (micro s): 999788
-$GPGGA,125018.000,5956.4162,N,01040.6833,E,2,07,1.08,103.8,M,40.7,M,0000,0000*62
-micros = 3149244
-$GPRMC,125018.000,A,5956.4162,N,01040.6833,E,0.37,91.82,070420,,,D*56
-micros = 3223856
-interrupt was triggered at time 3702220
-time elapsed since last trigger (micro s): 999788
-$GPGGA,125019.000,5956.4162,N,01040.6831,E,2,07,1.08,103.8,M,40.7,M,0000,0000*61
-micros = 4211232
-$GPRMC,125019.000,A,5956.4162,N,01040.6831,E,0.35,91.82,070420,,,D*57
-micros = 4285836
-interrupt was triggered at time 4702008
-time elapsed since last trigger (micro s): 999788
-$GPGGA,125020.000,5956.4163,N,01040.6829,E,2,08,0.97,103.8,M,40.7,M,0000,0000*6B
-micros = 5149088
-$GPRMC,125020.000,A,5956.4163,N,01040.6829,E,0.25,91.82,070420,,,D*54
-micros = 5223692
-interrupt was triggered at time 5701792
-time elapsed since last trigger (micro s): 999784
-$GPGGA,125021.000,5956.4163,N,01040.6828,E,1,07,1.24,103.8,M,40.7,M,,*6E
-micros = 6134836
-$GPRMC,125021.000,A,5956.4163,N,01040.6828,E,0.26,91.82,070420,,,A*52
-micros = 6209552
-interrupt was triggered at time 6701580
-time elapsed since last trigger (micro s): 999788
-$GPGGA,125022.000,5956.4163,N,01040.6827,E,1,07,1.24,103.8,M,40.7,M,,*62
-micros = 7174724
-$GPRMC,125022.000,A,5956.4163,N,01040.6827,E,0.31,91.82,070420,,,A*58
-micros = 7249448
-interrupt was triggered at time 7701368
-time elapsed since last trigger (micro s): 999788
-$GPGGA,125023.000,5956.4163,N,01040.6825,E,1,06,1.32,103.8,M,40.7,M,,*67
-micros = 8176504
-$GPRMC,125023.000,A,5956.4163,N,01040.6825,E,0.11,91.82,070420,,,A*59
-micros = 8251224
-interrupt was triggered at time 8701156
-time elapsed since last trigger (micro s): 999788
-$GPGGA,125024.000,5956.4163,N,01040.6825,E,1,07,1.24,103.8,M,40.7,M,,*66
-micros = 9130648
-$GPRMC,125024.000,A,5956.4163,N,01040.6825,E,0.15,91.82,070420,,,A*5A
-micros = 9205372
-interrupt was triggered at time 9700940
-time elapsed since last trigger (micro s): 999784
-$GPGGA,125025.000,5956.4163,N,01040.6825,E,1,07,1.24,103.8,M,40.7,M,,*67
-micros = 10143248
-$GPRMC,125025.000,A,5956.4163,N,01040.6825,E,0.04,91.82,070420,,,A*5B
-micros = 10217968
+micros = 146588
+interrupt pin 2 triggered 501436 elapsed 501436
+interrupt pin 3 triggered 512860 elapsed 512860
+delay 2 to 3 is 11424
+$GPGGA,085607.000,5956.4122,N,01040.6995,E,2,07,0.99,85.4,M,40.7,M,0000,0000*52
+micros = 969752
+$GPRMC,085607.000,A,5956.4122,N,01040.6995,E,0.03,217.21,080420,,,D*61
+micros = 1045384
+interrupt pin 2 triggered 1501228 elapsed 999792
+interrupt pin 3 triggered 1512664 elapsed 999804
+delay 2 to 3 is 11436
+$GPGGA,085608.000,5956.4122,N,01040.6995,E,2,07,0.99,85.4,M,40.7,M,0000,0000*5D
+micros = 1917804
+$GPRMC,085608.000,A,5956.4122,N,01040.6995,E,0.04,223.94,080420,,,D*60
+micros = 1993444
+interrupt pin 2 triggered 2501024 elapsed 999796
+interrupt pin 3 triggered 2512456 elapsed 999792
+delay 2 to 3 is 11432
+$GPGGA,085609.000,5956.4122,N,01040.6995,E,2,08,0.91,85.4,M,40.7,M,0000,0000*5B
+micros = 2967836
+$GPRMC,085609.000,A,5956.4122,N,01040.6995,E,0.09,321.55,080420,,,D*62
+micros = 3043484
+interrupt pin 2 triggered 3500820 elapsed 999796
+interrupt pin 3 triggered 3512252 elapsed 999796
+delay 2 to 3 is 11432
+$GPGGA,085610.000,5956.4122,N,01040.6994,E,2,08,0.91,85.4,M,40.7,M,0000,0000*52
+micros = 3927132
+$GPRMC,085610.000,A,5956.4122,N,01040.6994,E,0.09,245.35,080420,,,D*6E
+micros = 4002776
+interrupt pin 2 triggered 4500612 elapsed 999792
+interrupt pin 3 triggered 4512056 elapsed 999804
+delay 2 to 3 is 11444
+$GPGGA,085611.000,5956.4122,N,01040.6994,E,2,08,0.91,85.4,M,40.7,M,0000,0000*53
+micros = 4926952
+$GPRMC,085611.000,A,5956.4122,N,01040.6994,E,0.03,187.71,080420,,,D*68
+micros = 5002596
+interrupt pin 2 triggered 5500408 elapsed 999796
+interrupt pin 3 triggered 5511844 elapsed 999788
+delay 2 to 3 is 11436
+$GPGGA,085612.000,5956.4122,N,01040.6994,E,2,08,0.91,85.4,M,40.7,M,0000,0000*50
+micros = 5928732
+$GPRMC,085612.000,A,5956.4122,N,01040.6994,E,0.12,355.34,080420,,,D*67
+micros = 6004376
+interrupt pin 2 triggered 6500200 elapsed 999792
+interrupt pin 3 triggered 6511640 elapsed 999796
+delay 2 to 3 is 11440
+$GPGGA,085613.000,5956.4122,N,01040.6994,E,2,08,0.97,85.4,M,40.7,M,0000,0000*57
+micros = 6987672
+$GPRMC,085613.000,A,5956.4122,N,01040.6994,E,0.10,223.47,080420,,,D*60
+micros = 7063300
+interrupt pin 2 triggered 7499996 elapsed 999796
+interrupt pin 3 triggered 7511432 elapsed 999792
+delay 2 to 3 is 11436
+$GPG

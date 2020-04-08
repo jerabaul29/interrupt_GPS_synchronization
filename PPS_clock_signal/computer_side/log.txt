@@ -1,0 +1,120 @@
+serial connected
+start new second
+2020-04-08 11:32:39.000005
+booted...
+interrupt attached to pin 2
+start GPS...GPS started
+$PMTK001,314,3*36
+micros = 104628
+$PMTK001,220,3*30
+micros = 124516
+$PMTK001,300,3*33
+micros = 148120
+start new second
+2020-04-08 11:32:40.000005
+interrupt pin 2 triggered 153688 elapsed 153688
+interrupt pin 3 triggered 156960 elapsed 156960
+delay 2 to 3 is 3272
+$GPGGA,093240.000,5956.4081,N,01040.6841,E,2,09,0.80,79.1,M,40.7,M,0000,0000*52
+micros = 640408
+$GPRMC,093240.000,A,5956.4081,N,01040.6841,E,0.07,255.69,080420,,,D*6F
+micros = 716044
+start new second
+2020-04-08 11:32:41.000010
+interrupt pin 2 triggered 1153480 elapsed 999792
+interrupt pin 3 triggered 1156764 elapsed 999804
+delay 2 to 3 is 3284
+$GPGGA,093241.000,5956.4082,N,01040.6842,E,2,09,0.80,79.0,M,40.7,M,0000,0000*52
+micros = 1687816
+$GPRMC,093241.000,A,5956.4082,N,01040.6842,E,0.09,270.71,080420,,,D*6E
+micros = 1763464
+start new second
+2020-04-08 11:32:42.000009
+interrupt pin 2 triggered 2153276 elapsed 999796
+interrupt pin 3 triggered 2156556 elapsed 999792
+delay 2 to 3 is 3280
+$GPGGA,093242.000,5956.4080,N,01040.6844,E,2,09,0.80,78.9,M,40.7,M,0000,0000*5D
+micros = 2624216
+$GPRMC,093242.000,A,5956.4080,N,01040.6844,E,0.16,192.09,080420,,,D*67
+micros = 2699864
+start new second
+2020-04-08 11:32:43.000009
+interrupt pin 2 triggered 3153068 elapsed 999792
+interrupt pin 3 triggered 3156344 elapsed 999788
+delay 2 to 3 is 3276
+$GPGGA,093243.000,5956.4079,N,01040.6844,E,2,09,0.80,78.9,M,40.7,M,0000,0000*5A
+micros = 3634304
+$GPRMC,093243.000,A,5956.4079,N,01040.6844,E,0.20,191.54,080420,,,D*6E
+micros = 3709964
+start new second
+2020-04-08 11:32:44.000007
+interrupt pin 2 triggered 4152864 elapsed 999796
+interrupt pin 3 triggered 4156136 elapsed 999792
+delay 2 to 3 is 3272
+$GPGGA,093244.000,5956.4079,N,01040.6846,E,2,09,0.80,78.9,M,40.7,M,0000,0000*5F
+micros = 4692288
+$GPRMC,093244.000,A,5956.4079,N,01040.6846,E,0.16,173.90,080420,,,D*6A
+micros = 4767916
+start new second
+2020-04-08 11:32:45.000008
+interrupt pin 2 triggered 5152656 elapsed 999792
+interrupt pin 3 triggered 5155940 elapsed 999804
+delay 2 to 3 is 3284
+$GPGGA,093245.000,5956.4078,N,01040.6845,E,2,09,0.80,78.9,M,40.7,M,0000,0000*5C
+micros = 5690488
+$GPRMC,093245.000,A,5956.4078,N,01040.6845,E,0.19,227.20,080420,,,D*6F
+micros = 5766140
+start new second
+2020-04-08 11:32:46.000009
+interrupt pin 2 triggered 6152448 elapsed 999792
+interrupt pin 3 triggered 6155736 elapsed 999796
+delay 2 to 3 is 3288
+$GPGGA,093246.000,5956.4079,N,01040.6847,E,2,09,0.80,78.9,M,40.7,M,0000,0000*5C
+micros = 6625124
+$GPRMC,093246.000,A,5956.4079,N,01040.6847,E,0.09,289.77,080420,,,D*68
+micros = 6700776
+start new second
+2020-04-08 11:32:47.000013
+interrupt pin 2 triggered 7152244 elapsed 999796
+interrupt pin 3 triggered 7155532 elapsed 999796
+delay 2 to 3 is 3288
+$GPGGA,093247.000,5956.4078,N,01040.6848,E,2,09,0.80,78.9,M,40.7,M,0000,0000*53
+micros = 7673664
+$GPRMC,093247.000,A,5956.4078,N,01040.6848,E,0.14,216.99,080420,,,D*6D
+micros = 7749316
+start new second
+2020-04-08 11:32:48.000012
+interrupt pin 2 triggered 8152036 elapsed 999792
+interrupt pin 3 triggered 8155332 elapsed 999800
+delay 2 to 3 is 3296
+$GPGGA,093248.000,5956.4078,N,01040.6848,E,2,09,0.80,78.9,M,40.7,M,0000,0000*5C
+micros = 8689448
+$GPRMC,093248.000,A,5956.4078,N,01040.6848,E,0.16,231.05,080420,,,D*60
+micros = 8765096
+start new second
+2020-04-08 11:32:49.000014
+interrupt pin 2 triggered 9151828 elapsed 999792
+interrupt pin 3 triggered 9155124 elapsed 999792
+delay 2 to 3 is 3296
+$GPGGA,093249.000,5956.4078,N,01040.6848,E,2,09,0.80,78.9,M,40.7,M,0000,0000*5D
+micros = 9643152
+$GPRMC,093249.000,A,5956.4078,N,01040.6848,E,0.23,202.51,080420,,,D*66
+micros = 9718796
+start new second
+2020-04-08 11:32:50.000014
+interrupt pin 2 triggered 10151624 elapsed 999796
+interrupt pin 3 triggered 10154932 elapsed 999808
+delay 2 to 3 is 3308
+$GPGGA,093250.000,5956.4077,N,01040.6847,E,2,09,0.80,78.9,M,40.7,M,0000,0000*55
+micros = 10618180
+$GPRMC,093250.000,A,5956.4077,N,01040.6847,E,0.05,100.54,080420,,,D*6E
+micros = 10693816
+start new second
+2020-04-08 11:32:51.000008
+interrupt pin 2 triggered 11151416 elapsed 999792
+interrupt pin 3 triggered 11154712 elapsed 999780
+delay 2 to 3 is 3296
+$GPGGA,093251.000,5956.4077,N,01040.6847,E,2,09,0.80,78.9,M,40.7,M,0000,0000*54
+micros = 11686128
+$GPRMC,093251.000,A,5956.4077,N,01040.6847,E,0.08,162.44,080420,,,D*67
+micros = 11761776

@@ -26,12 +26,15 @@ Note about PPS vs. GPS:
 */
 
 constexpr unsigned long baud_rate = 115200;
-constexpr int pin_interrupt = 2;
+constexpr uint8_t pin_interrupt = 2;
+constexpr uint8_t pin_utc = 3;
 constexpr bool pullup = false;
 
-unsigned long time_recorded = 0;
-unsigned long previous_time_recorded = 0;
-unsigned long time_elapsed_micro_s = 0;
+unsigned long delay_2_to_3 = 0;
+unsigned long time_2;
+unsigned long time_3;
+
+TimedInterrupt crrt_timed_interrupt;
 
 Adafruit_GPS GPS(&Serial1);
 
@@ -41,6 +44,7 @@ void setup() {
   Serial.println(F("booted..."));
 
   time_catcher.turn_on(pin_interrupt, RISING, pullup);
+  time_catcher.turn_on(pin_utc, RISING, pullup);
 
   Serial.print(F("interrupt attached to pin "));
   Serial.println(pin_interrupt);
@@ -57,14 +61,24 @@ void setup() {
 
 void loop() {
   if (time_catcher.available_time()){
-    time_recorded = time_catcher.get_time();
-    time_elapsed_micro_s = time_recorded - previous_time_recorded;
-    previous_time_recorded = time_recorded;
+    crrt_timed_interrupt = time_catcher.get_measurement();
 
-    Serial.print(F("interrupt was triggered at time "));
-    Serial.println(time_recorded);
-    Serial.print(F("time elapsed since last trigger (micro s): "));
-    Serial.println(time_elapsed_micro_s);
+    Serial.print(F("interrupt pin "));
+    Serial.print(mapping_index_to_interrupt_pin[crrt_timed_interrupt.interrupt_index]);
+    Serial.print(F(" triggered "));
+    Serial.print(crrt_timed_interrupt.micros);
+    Serial.print(F(" elapsed "));
+    Serial.println(crrt_timed_interrupt.elapsed);
+
+    if (mapping_index_to_interrupt_pin[crrt_timed_interrupt.interrupt_index] == 2){
+      time_2 = crrt_timed_interrupt.micros;
+    }
+    else if (mapping_index_to_interrupt_pin[crrt_timed_interrupt.interrupt_index] == 3){
+      time_3 = crrt_timed_interrupt.micros;
+      delay_2_to_3 = time_3 - time_2;
+      Serial.print(F("delay 2 to 3 is "));
+      Serial.println(delay_2_to_3);
+    }
   }
 
   char c_GPS = GPS.read();
