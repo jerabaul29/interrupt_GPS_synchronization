@@ -35,6 +35,7 @@ unsigned long time_2;
 unsigned long time_3;
 
 TimedInterrupt crrt_timed_interrupt;
+TimedInterrupt previous_timed_interrupt;
 
 Adafruit_GPS GPS(&Serial1);
 
@@ -61,14 +62,8 @@ void setup() {
 
 void loop() {
   if (time_catcher.available_time()){
+    previous_timed_interrupt = crrt_timed_interrupt;
     crrt_timed_interrupt = time_catcher.get_measurement();
-
-    Serial.print(F("interrupt pin "));
-    Serial.print(mapping_index_to_interrupt_pin[crrt_timed_interrupt.interrupt_index]);
-    Serial.print(F(" triggered "));
-    Serial.print(crrt_timed_interrupt.micros);
-    Serial.print(F(" elapsed "));
-    Serial.println(crrt_timed_interrupt.elapsed);
 
     if (mapping_index_to_interrupt_pin[crrt_timed_interrupt.interrupt_index] == 2){
       time_2 = crrt_timed_interrupt.micros;
@@ -76,6 +71,21 @@ void loop() {
     else if (mapping_index_to_interrupt_pin[crrt_timed_interrupt.interrupt_index] == 3){
       time_3 = crrt_timed_interrupt.micros;
       delay_2_to_3 = time_3 - time_2;
+
+      Serial.print(F("interrupt pin "));
+      Serial.print(mapping_index_to_interrupt_pin[previous_timed_interrupt.interrupt_index]);
+      Serial.print(F(" triggered "));
+      Serial.print(previous_timed_interrupt.micros);
+      Serial.print(F(" elapsed "));
+      Serial.println(previous_timed_interrupt.elapsed);
+
+      Serial.print(F("interrupt pin "));
+      Serial.print(mapping_index_to_interrupt_pin[crrt_timed_interrupt.interrupt_index]);
+      Serial.print(F(" triggered "));
+      Serial.print(crrt_timed_interrupt.micros);
+      Serial.print(F(" elapsed "));
+      Serial.println(crrt_timed_interrupt.elapsed);
+
       Serial.print(F("delay 2 to 3 is "));
       Serial.println(delay_2_to_3);
     }

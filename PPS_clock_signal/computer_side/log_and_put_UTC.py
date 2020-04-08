@@ -26,6 +26,7 @@ with serial.Serial(serial_port, baudrate, timeout=0) as ser:
     while True:
         if (second_tracker.start_second()):
             print("start new second")
+            print("")
             print(datetime.now())
 
         if (ser.in_waiting > 0):
