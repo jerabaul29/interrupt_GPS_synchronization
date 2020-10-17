@@ -1,0 +1,3 @@
+[submodule "PPS_clock_signal/lib/SoftwareSerial"]
+	path = PPS_clock_signal/lib/SoftwareSerial
+	url = https://github.com/PaulStoffregen/SoftwareSerial.git
